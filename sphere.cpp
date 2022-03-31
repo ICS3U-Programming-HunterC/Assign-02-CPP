@@ -6,10 +6,13 @@
 
 #include <iostream>
 #include <cmath>
+#include <string>
 
 
 // declare variables
-float radius, surfaceArea, volume, units;
+float radius, surfaceArea, volume;
+std::string units;
+
 
 int main() {
     // input
@@ -23,7 +26,7 @@ int main() {
 
     // process
     surfaceArea = 4 * M_PI * pow(radius, 2);
-    volume = 4/3 * M_PI * pow(radius, 3);
+    volume =  M_PI * pow(radius, 3) * 4/3;
 
     // output
     std::cout << "\n";
